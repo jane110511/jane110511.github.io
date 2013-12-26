@@ -1,0 +1,18 @@
+permalink: /:categories/:year/:month/:day/:title 
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+#???
+include:     ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+keep_files:  ['.git','.svn']
+gems:        []
+timezone:    nil
+
+auto: true
+pygments: true
+paginate: 4
+# enable github favored Markdown
+markdown: redcarpet
