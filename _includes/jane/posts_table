@@ -1,0 +1,12 @@
+{% for post in posts_list  %}
+<tr>  
+  <td class="post-featured">{% if post.featured %} <i class="fa fa-star"></i> {% endif %}</td>
+  <td class="post-date">{{ post.date | date: "%Y Year %m Month %d Day" }}</td>
+  <td class="post-url">
+    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  </td>
+  <td class="post-tags">{{ post.tags | join:', ' }}</td>
+</tr>
+{% endfor %}
+  
+{% assign posts_list = nil %}
