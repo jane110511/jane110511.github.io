@@ -1,18 +1,40 @@
-permalink: /:categories/:year/:month/:day/:title 
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-#???
-include:     ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-keep_files:  ['.git','.svn']
-gems:        []
-timezone:    nil
-
-auto: true
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
 pygments: true
-paginate: 4
-# enable github favored Markdown
-markdown: redcarpet
+
+title: Home Page
+description: Home Page
+author:
+  name: Jane
+  email: jane.110511@gmail.com
+  github: jane110511
+  twitter: test
+  pinterest: test
+  linkedin: test
+  bio: test
+  email_md5: 1b87f1f342c5456fd4a72d419ce2274a
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# BASE_PATH: http://jane110511.github.io
+
+# All links will be namespaced by BASE_PATH if defined.
+# Links in your website should always be prefixed with {{ site.BASE_PATH }}
+# Do not put a "/" at the end of the url.
+#
+# CNAME (http://yourcustomdomain.com)
+#   DO NOT SET BASE_PATH JUST LEAVE IT BLANK 
+#   (urls will be prefixed with "/" and work relatively)
+#
+# GitHub Pages (http://username.github.io)
+#   DO NOT SET BASE_PATH JUST LEAVE IT BLANK 
+#   (urls will be prefixed with "/" and work relatively)
+#
+# GitHub Project Pages (http://username.github.io/project-name)
+#  A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
+#  REQUIRED! Set BASE_PATH to "http://username.github.io/project-name"

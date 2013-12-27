@@ -1,8 +1,0 @@
-{% if site.safe and site.jane.sharing.provider and page.jane.sharing != false %}
-
-{% case site.jane.sharing.provider %}
-{% when "custom" %}
-  {% include custom/sharing %}
-{% endcase %}
-
-{% endif %}

@@ -1,90 +1,75 @@
 ---
-layout: index
-title: test
+layout: page
+title: Home Page
+tagline:
 ---
-HOME
-{% include jane/setup %}
+
 {% for post in paginator.posts %}
-<div class="well typo post post-index">
-  {% if post.featured %} {% include jane/featured_post_decoration %} {% endif %}
-  <h2 class="title"><a href="{{ post.url }}">
-  {{ post.title }}
-  {% if post.tagline %}
-    <small>{{ post.tagline }}</small>
+
+        <article class="home">
+
+            <span class="post-date">
+                {% assign d = post.date | date: "%d" | plus:'0' %}
+                {{ post.date | date: "%B" }}
+                {% case d %}
+                  {% when 1 or 21 or 31 %}{{ d }}st,
+                  {% when 2 or 22 %}{{ d }}nd,
+                  {% when 3 or 23 %}{{ d }}rd,
+                  {% else %}{{ d }}th,
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+            </span>
+
+            <h1>
+                <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+            </h1>
+
+            <div>
+                {% if post.fullview %}
+                  {{ post.content }}
+                {% else %}
+                    {% if post.shortinfo %}
+                        {{ post.shortinfo }}
+                    {% elsif post.description %}
+                        {{ post.description }}
+                    {% else %}
+                        {{ post.excerpt }}
+                    {% endif %}
+                {% endif %}
+            </div>
+
+        </article>
+{% endfor %}
+<hr/>
+
+<ul class="pager"> 
+
+  {% if paginator.previous_page %}
+    <li class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+      {% else %}
+        <a href="{{ site.BASE_PATH }}/page{{ paginator.previous_page }}">&larr; Newer</a>
+      {% endif %}
+    </li>
+  {% else %}
+    <li class="previous disabled">
+      <a>&larr; Newer</a>
+    </li>
   {% endif %}
-  </a></h2>
-  <div class="post_info">
-  {% unless post.categories == empty %}
-  <ul class="tag_box inline list-inline">
-    <li><i class="fa fa-calendar"></i></li>
-    <li id="post-date">{{ post.date | date: " %Y 年 %m 月 %d 日" }}</li>
-    <li><i class="fa fa-folder-open"></i></li>
-    {% assign post_categories = post.categories %}
-    {% include jane/post_categories_info %}
-  </ul>
-  {% endunless %}  
-  <span> 
-  </div>
-  <div class="archive">
-    {% if post.tldr %}
-	  {{ post.excerpt }}
-	  <a href="{{ post.url }}" > >> 继续阅读 <<  </a>
-	{% else %}
-	  {{ post.content }}
-	{% endif %}
-  </div>
-</div>
-  {% endfor %}
   
-  <!-- 分页页码展示 -->
-  <div id="post-pagination" class="text-center">
-    <ul class="pagination">
-      <!-- 上一页按钮 -->
-      {% if paginator.previous_page %}
-      <li>
-        {% if paginator.previous_page == 1 %}
-        <a href="/"><i class="fa fa-chevron-left"></i></a>
-        {% else %}
-        <a href="/page{{ paginator.previous_page }}"><i class="fa fa-chevron-left"></i></a>
-        {% endif %}
-      </li>
-      {% else %}
-      <li class="disabled">
-      <span><i class="fa fa-chevron-left"></i></span>
-      </li>
-      {% endif %}
+  <li>
+          <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  </li>
 
-      <!-- 第一页,访问根目录 -->
-      {% if paginator.page == 1 %}
-      <li class="active">
-      <a href="#">1</a>
-      </li>
-      {% else %}
-      <li>
-      <a href="/">1</a>
-      </li>
-      {% endif %}
+  {% if paginator.next_page %}
+    <li class="next">
+            <a href="{{ site.BASE_PATH }}/page{{ paginator.next_page }}">Older &rarr;</a>
+    </li>
+  {% else %}
+    <li class="next disabled">
+            <a>Older &rarr;</a>        
+    </li>
+  {% endif %}
 
-      {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-      <li class="active">
-      <a href="#">{{ count }}</a>
-      </li>
-      {% else %}
-      <li>
-      <a href="/page{{ count }}">{{ count }}</a>
-      </li>
-      {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-      <li>
-      <a href="/page{{ paginator.next_page }}"><i class="fa fa-chevron-right"></i></a>
-      </li>
-      {% else %}
-      <li class="disabled">
-      <a href="#"><i class="fa fa-chevron-right"></i></a>
-      </li>
-      {% endif %}
-    </ul>
-  </div>
+</ul>
