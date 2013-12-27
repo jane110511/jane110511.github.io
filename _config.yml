@@ -11,10 +11,10 @@ author:
   name: Jane
   email: jane.110511@gmail.com
   github: jane110511
-  twitter: test
-  pinterest: test
-  linkedin: test
-  bio: test
+  weibo: zhangzhangya24
+  #pinterest: test
+  #linkedin: test
+  #bio: test
   email_md5: 1b87f1f342c5456fd4a72d419ce2274a
 
 rss_path: feed.xml
