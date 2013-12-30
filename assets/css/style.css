@@ -66,7 +66,7 @@ article img { max-width: 100%; }
 
 h,h1,h2,h3,h4,h5,h6{ font-family: 'Ubuntu', sans-serif; color: #f2756a; }
 h a,h1 a,h2 a,h3 a,h4 a{ color: #f2756a; }
-h a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{ color: #e74c3c; }
+h a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{  color: #2c3e50;  }
 h home-header:{ font-size: 20px; }
 
 footer {

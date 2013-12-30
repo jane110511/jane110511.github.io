@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ready for 2014
+title: Test for tags
 categories: test
 tag: test
 ---
@@ -11,3 +11,8 @@ tag: test
 
 ***************************
 haha
+
+
+This is a test tag
+****
+
