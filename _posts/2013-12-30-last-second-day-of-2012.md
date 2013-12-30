@@ -7,4 +7,4 @@ tag: test
 
 ***************************
 
-How about two tags。。。。。。。。。。。
+How about two tags
