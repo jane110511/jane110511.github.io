@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2013
-categories: not
+categories: 中了
 tag: 中文测试
 ---
 
