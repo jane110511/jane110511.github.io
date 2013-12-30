@@ -2,7 +2,7 @@
 layout: post
 title: 2013
 categories: not
-tag: test
+tag: 中文测试
 ---
 
 ***************************
