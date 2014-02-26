@@ -88,6 +88,66 @@ java -ea MyProgram //enable assertions
 java -da MyProgram //disable assertions(default)
 ````
 
+Bottom-up mergesort
+---
+- Pass through array, merging subarrays of size1
+- Repeat for subarrays of size 2, 4, 8, 16, ......
+- Bottom line: Simple and non-recursive version of mergesort.
+
+```
+	public static void sort(Comparable[] a){
+		int N = a.length;
+		Comparable[] aux = new Comparable[N];
+		for(int sz = 1; sz < N; sz = sz + sz){
+			System.out.println("sizeeeeeeeeeeeeee:" + sz);
+			for(int lo = 0; lo < N-sz; lo += sz + sz){
+				System.out.println("lo:" + lo);
+				System.out.println("mid:" + (lo+sz-1));
+				System.out.println("hi:" + Math.min(lo+sz+sz-1, N-1));
+				merge(a, aux, lo, lo+sz-1, Math.min(lo+sz+sz-1, N-1));
+			}
+		}
+	}
+	
+output:
+
+sizeeeeeeeeeeeeee:1
+lo:0
+mid:0
+hi:1
+lo:2
+mid:2
+hi:3
+lo:4
+mid:4
+hi:5
+lo:6
+mid:6
+hi:7
+lo:8
+mid:8
+hi:9
+sizeeeeeeeeeeeeee:2
+lo:0
+mid:1
+hi:3
+lo:4
+mid:5
+hi:7
+lo:8
+mid:9
+hi:10
+sizeeeeeeeeeeeeee:4
+lo:0
+mid:3
+hi:7
+sizeeeeeeeeeeeeee:8
+lo:0
+mid:7
+hi:10
+```
+
+
 
 
 	
