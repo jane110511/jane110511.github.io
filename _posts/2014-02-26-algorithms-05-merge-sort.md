@@ -6,7 +6,7 @@ tags: algorithms sort
 ---
 
 Merge Sort
-===
+---
 - Java sort for objects
 - Divide array into two halves
 - Take an auxiliary array to hold the data
@@ -78,7 +78,7 @@ public class Sort {
 ```
 
 Assertion
-==
+---
 - Helps detect logic bugs
 - Documents code
 - Enable or disable at runtime
