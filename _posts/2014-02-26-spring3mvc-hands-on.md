@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Spring 3 MVC Hands on
-categories: Technology
+categories: Tech
 tags: spring
 ---
 
-dddd
+I will implement tomorrow at work
+---

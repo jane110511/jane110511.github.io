@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Sort
-categories: Technology
+categories: Tech
 tags: algorithms sort
 ---
 
