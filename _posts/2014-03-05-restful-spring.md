@@ -22,6 +22,7 @@ An HttpMessageConverter implementation that can read and write JSON using Jackso
 If you want to use xml as the respon body, you can use request mapping properties:
 
 ```
+//start from 3.1.0
 @RequestMapping(
     value = "/{id}.json",
     method = RequestMethod.GET,
