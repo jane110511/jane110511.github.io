@@ -13,6 +13,7 @@ In my case "C:\Program Files\Java\jdk1.7.0_01\lib\tools.jar"
 
 [InfoQ]
 (http://www.infoq.com/cn/articles/cf-java-annotation)
+
 [JavaBeat]
 (http://www.javabeat.net/java-6-0-features-part-2-pluggable-annotation-processing-api/)
 
