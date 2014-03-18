@@ -16,6 +16,7 @@ DAY1：
   
   1.Java的字节流 
    InputStream是所有字节输入流的祖先，而OutputStream是所有字节输出流的祖先。 
+   
   2.Java的字符流 
   
   [JavaIO](http://www.cnblogs.com/lich/tag/java%20IO/)
