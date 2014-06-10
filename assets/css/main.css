@@ -7,9 +7,6 @@ html, body {
   font-family: "Go Around", "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
-body {
-  margin: 80px 0; }
-
 .heading:after {
   content: "";
   display: block;
@@ -50,13 +47,14 @@ h1.title {
   float: right;
   text-align: right; }
 
-.score-container, .best-container {
+.score-container, .best-container, .new-container {
   position: relative;
   display: inline-block;
   background: #bbada0;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
+  width: 110px;
   line-height: 47px;
   font-weight: bold;
   border-radius: 3px;
@@ -488,16 +486,12 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
   border-radius: 3px;
-  padding: 0 20px;
+  padding: 0 25px;
   text-decoration: none;
   color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
   display: block;
-  text-align: center;
-  float: right; }
+  text-align: center; }
 
 .game-explanation {
   margin-top: 50px; }
@@ -505,10 +499,6 @@ hr {
 @media screen and (max-width: 520px) {
   html, body {
     font-size: 15px; }
-
-  body {
-    margin: 20px 0;
-    padding: 0 20px; }
 
   h1.title {
     font-size: 27px;
