@@ -1,10 +1,10 @@
-@import url(fonts/clear-sans.css);
+@import url(fonts/go-around.css);
 html, body {
   margin: 0;
   padding: 0;
   background: #faf8ef;
   color: #776e65;
-  font-family: "Go Around", "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Go Around", Arial, sans-serif;
   font-size: 18px; }
 
 .heading:after {
