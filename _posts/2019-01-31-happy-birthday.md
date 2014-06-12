@@ -15,7 +15,7 @@ tags: life
 
 1. 哇，这是个final project，写个能展示自己的机器人，让她代替我回短信，回复状态、聊天，让别人觉得她就是我。
 
-2. (Done)写个自己的[2048](http://jane110511.github.io/2048/2048.html)，发到github的页面上，这个应该很简单。
+2. <font color="#7CB04C">(Done)</font>写个自己的[2048](http://jane110511.github.io/2048/2048.html)，发到github的页面上，这个应该很简单。
 
 3. 看看这个[Active Coding](https://www.futurelearn.com/courses/creative-coding),懂艺术的程序员，做闪亮的自己。
 
