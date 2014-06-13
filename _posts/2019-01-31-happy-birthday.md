@@ -21,5 +21,7 @@ tags: life
 
 4. [算法算法](https://class.coursera.org/algs4partI-005)，这次一定要学完啊，一定不要再放弃啊啊啊啊，这都是第五次开课了，要珍惜啊啊啊啊啊！！！
 
+5. 添加你的mooc页面，看看怎么自己写font awesome.
+
 5. 我也不知道我为什么要咆哮！！！
 
