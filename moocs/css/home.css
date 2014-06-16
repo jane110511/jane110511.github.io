@@ -1,0 +1,35 @@
+.university
+{font-size: 14px;
+font-family: "sofiapro-light",Arial,sans-serif;
+}
+.course-name {
+font-family: "sofiapro-light",Arial,sans-serif;
+font-size: 18px;
+margin-bottom: 20px;
+}
+.ended-desc {
+margin-top: 2px;
+font-size: 14px;
+font-family: "sofiapro-light",Arial,sans-serif;
+color: #999;
+}
+
+.coursera-container {
+float: left;
+width: 35%;
+margin-right: 2.5%;
+position: relative;
+}
+
+.coursera-listing {
+width: 62.5%;
+float: left;
+height: 150px;
+padding-left: 20px;
+}
+.course-listing-box {
+border-top: 1px solid #ccc;
+padding: 30px 20px 30px 0;
+width: 100%;
+height: 150px;
+}
