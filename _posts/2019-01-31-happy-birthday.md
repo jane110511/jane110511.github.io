@@ -15,13 +15,13 @@ tags: life
 
 1. 哇，这是个final project，写个能展示自己的机器人，让她代替我回短信，回复状态、聊天，让别人觉得她就是我。
 
-2. <font color="#7CB04C">(Done)</font>写个自己的[2048](http://jane110511.github.io/2048/2048.html)，发到github的页面上，这个应该很简单。
+2. <font color="#7CB04C">(Done)</font>写个自己的[2048]({{ site.BASE_PATH }}/2048/2048.html)，发到github的页面上，这个应该很简单。
 
 3. 看看这个[Active Coding](https://www.futurelearn.com/courses/creative-coding),懂艺术的程序员，做闪亮的自己。
 
 4. [算法算法](https://class.coursera.org/algs4partI-005)，这次一定要学完啊，一定不要再放弃啊啊啊啊，这都是第五次开课了，要珍惜啊啊啊啊啊！！！
 
-5. 添加我的[mooc](http://jane110511.github.io/moocs/home.html)页面，看看怎么自己写font awesome.
+5. 添加我的[mooc]({{ site.BASE_PATH }}/moocs/home.html)页面，看看怎么自己写font awesome.
 
 6. 最近看到这样一个说法，如果五年后你想变成什么样子，就要倒退回现在你应该是什么样子，做什么事情。
 
@@ -33,7 +33,9 @@ tags: life
 	5. 一年后(2015.6)的我应该英语很好（雅思9）。进入一个小的非外包的美国公司。
 		1. 半年后(2014.12)的我，雅思7。开始准备换工作。
 		2. 三个月后(2014.9)的我，雅思6。看看相关行业，整理初合适公司名单。
-		3. (Doing)一个月后(2014.7)的我，雅思5。看看算法，基础技术。[What have I done](https://todo.com)
+		3. (Doing)一个月后(2014.7)的我，雅思5。看看算法，基础技术。[What have I done]()
+
+
 		
 8. 我也不知道我为什么要咆哮！！！
 
