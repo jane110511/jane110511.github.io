@@ -22,6 +22,7 @@ tags: life
 4. [算法算法](https://class.coursera.org/algs4partI-005)，这次一定要学完啊，一定不要再放弃啊啊啊啊，这都是第五次开课了，要珍惜啊啊啊啊啊！！！
 
 5. 添加我的[mooc]({{ site.BASE_PATH }}/moocs/home.html)页面，看看怎么自己写font awesome.
+6. 不要停止读书。
 
 6. 最近看到这样一个说法，如果五年后你想变成什么样子，就要倒退回现在你应该是什么样子，做什么事情。
 
