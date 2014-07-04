@@ -13,11 +13,9 @@ author:
   email: jane.110511@gmail.com
   github: janezhango
   weibo: zhangzhangya24
-  #pinterest: test
-  #linkedin: test
-  #bio: test
   email_md5: 1b87f1f342c5456fd4a72d419ce2274a
 
+mooc_path: mooc.html
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
