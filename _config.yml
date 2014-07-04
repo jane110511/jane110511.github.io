@@ -15,7 +15,7 @@ author:
   weibo: zhangzhangya24
   email_md5: 1b87f1f342c5456fd4a72d419ce2274a
 
-mooc_path: mooc.html
+mooc_path: moocs/home.html
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
