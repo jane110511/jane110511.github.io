@@ -116,21 +116,22 @@ Interview Questions
 
    If you are catching a lot of exceptions in a single try block, you will notice that catch block code looks very ugly and mostly consists of redundant code to log the error, keeping this in mind Java 7 one of the feature was multi-catch block where we can catch multiple exceptions in a single catch block. The catch block with this feature looks like below:
 
-```
-catch(IOException | SQLException | Exception ex){
-     logger.error(ex);
-     throw new MyException(ex.getMessage());
-}
-```
+   ```
+   catch(IOException | SQLException | Exception ex){
+        logger.error(ex);
+        throw new MyException(ex.getMessage());
+   }
+   ```
+   
    Most of the time, we use finally block just to close the resources and sometimes we forget to close them and get runtime exceptions when the resources are exhausted. These exceptions are hard to debug and we might need to look into each place where we are using that type of resource to make sure we are closing it. So java 7 one of the improvement was try-with-resources where we can create a resource in the try statement itself and use it inside the try-catch block. When the execution comes out of try-catch block, runtime environment automatically close these resources. Sample of try-catch block with this improvement is:
 
-```
-try (MyResource mr = new MyResource()) {
-            System.out.println("MyResource created in try-with-resources");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-```
+   ```
+   try (MyResource mr = new MyResource()) {
+               System.out.println("MyResource created in try-with-resources");
+           } catch (Exception e) {
+               e.printStackTrace();
+           }
+   ```
 
    Read more about this at Java 7 ARM.
 
@@ -152,30 +153,32 @@ try (MyResource mr = new MyResource()) {
    
    A simple example of custom exception is shown below.
    
-MyException.java
-```
-package com.journaldev.exceptions;
- 
-import java.io.IOException;
- 
-public class MyException extends IOException {
- 
-    private static final long serialVersionUID = 4664456874499611218L;
-     
-    private String errorCode="Unknown_Exception";
-     
-    public MyException(String message, String errorCode){
-        super(message);
-        this.errorCode=errorCode;
-    }
-     
-    public String getErrorCode(){
-        return this.errorCode;
-    }
-     
- 
-}
-```
+   MyException.java
+
+   ```
+   package com.journaldev.exceptions;
+    
+   import java.io.IOException;
+    
+   public class MyException extends IOException {
+    
+       private static final long serialVersionUID = 4664456874499611218L;
+        
+       private String errorCode="Unknown_Exception";
+        
+       public MyException(String message, String errorCode){
+           super(message);
+           this.errorCode=errorCode;
+       }
+        
+       public String getErrorCode(){
+           return this.errorCode;
+       }
+        
+    
+   }
+   ```
+
 8. What is OutOfMemoryError in Java?
 
    OutOfMemoryError in Java is a subclass of java.lang.VirtualMachineError and it’s thrown by JVM when it ran out of heap memory. We can fix this error by providing more memory to run the java application through java options.
