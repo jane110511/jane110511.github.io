@@ -69,7 +69,7 @@ tags: java,Exception
    }
 ```
 
-Interview Questions
+[Interview Questions](http://www.journaldev.com/2167/java-exception-interview-questions-and-answers)
 ===
 1. What is Exception in Java?
 
