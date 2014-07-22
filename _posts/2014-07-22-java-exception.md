@@ -9,7 +9,7 @@ tags: java,Exception
 
 1. 具体明确
 
->>>
+```
 
    File prefsFile = new File(prefsFilename);
     
@@ -32,11 +32,11 @@ tags: java,Exception
        // error occurred
    }
    
->>>
+```
 
 2. 提早抛出
 
->>>
+```
   public void readPreferences(String filename)
   throws IllegalArgumentException{
       if (filename == null){
@@ -49,11 +49,11 @@ tags: java,Exception
    
      //...read the preferences file...
   }
-
+```
 
 3. 延迟捕获
 
->>>
+```
    public void readPreferences(String filename)
    throws IllegalArgumentException,
    FileNotFoundException, IOException{
@@ -67,4 +67,3 @@ tags: java,Exception
     
    //...
    }
->>>
