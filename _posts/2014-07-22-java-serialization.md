@@ -15,7 +15,7 @@ and this [理解Java对象序列化](http://www.blogjava.net/jiangshachina/archi
 
   1. transient关键字
   
-    当某个字段被声明为transient后，默认序列化机制就会忽略该字段。此处将Person类中的age字段声明为transient，如下所示，
+  当某个字段被声明为transient后，默认序列化机制就会忽略该字段。此处将Person类中的age字段声明为transient，如下所示，
     ```    
     public class Person implements Serializable {
             
@@ -24,10 +24,10 @@ and this [理解Java对象序列化](http://www.blogjava.net/jiangshachina/archi
         }
     ```
   再执行SimpleSerial应用程序，会有如下输出：
-  ```
-  arg constructor
-  [John, null, MALE]
-  ```
+    ```
+    arg constructor
+    [John, null, MALE]
+    ```
   可见，age字段未被序列化。
 
 //TODO
