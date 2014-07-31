@@ -1,17 +1,16 @@
 ---
 layout: post
-title: WOW
-categories: plan
-tags: life
+title: Wait Wait Don't tell me
+categories: English
+tags: WaitWait
 ---
-
 Copyright © 2014 NPR. For personal, noncommercial use only. See Terms of Use. For other uses, prior permission required.
 
 BILL KURTIS, BYLINE: From NPR and WBEZ Chicago, this is WAIT WAIT ...DON'T TELL ME, the NPR News quiz. I'm carnivorous anchorman Bill Kurtis.
 
 ```
-carnivorous - eat meat 
-anchorman - host
+carnivorous - Carnivorous can be used, especially humorously, to describe someone who eats meat. 
+anchorman - The anchorman on a television or radio programme, especially a news programme, is the person who presents it.
 ```
 
 KURTIS: And here's your host, at the Nourse Theater in San Francisco, Peter Sagal.
@@ -21,34 +20,30 @@ PETER SAGAL, HOST:
 Thank you.
 
 SAGAL: Thank you, Bill. Seriously, I thought you guys were mellow. What is this?
-```A mellow sound or flavour is pleasant, smooth, and rich. ```
-SAGAL: This is our second week here in San Francisco. And I am pleased to announce that our show has been bought by Google.
 
-(LAUGHTER)
+```A mellow sound or flavour is pleasant, smooth, and rich. ```
+
+SAGAL: This is our second week here in San Francisco. And I am pleased to announce that our show has been bought by Google.
 
 SAGAL: Now, don't worry. Our show will be the same. But once the deal goes through, after every question, we have to pause - one minute in silence to let you Google the answer.
 
-(LAUGHTER)
-
 KURTIS: And don't even think about Bing.
 
-(LAUGHTER)
-
 SAGAL: Today, though, you're going to have to do it the old-fashioned way. Give us a call at 1-888-WAIT-WAIT. That's 1-888-924-8924. It's time to welcome our first listener contestant. Hi, you're on WAIT WAIT ...DON'T TELL ME.
+
+```A contestant in a competition or game show is a person who takes part in it.```
 
 LIZ KANTER-GROSCAN: Hi.
 
 SAGAL: Hi, who's this?
 
-KANTER-GROSCAN: Liz Kanter-Groscan (ph) from Tucson, Arizona.
+KANTER-GROSCAN: Liz Kanter-Groscan (ph) from Tucson``` tu:'sɔn```, Arizona.
 
 SAGAL: Hey, Liz Kanter-Groscan. How are you?
 
 KANTER-GROSCAN: I'm well, thanks. And you?
 
 SAGAL: I'm fine. So Liz Kanter-Groscan, one of those great, you know, old, Mexican names, I guess.
-
-(LAUGHTER)
 
 SAGAL: From Tucson.
 
