@@ -27,4 +27,25 @@ tags: Android
 5. Push Messaging 
   GCM service
   
-  
+6. Java Servlet
+	web.xml to routing request
+	
+7. HttpServlet
+
+8. Request Routing and Web.xml
+
+web master
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ 
