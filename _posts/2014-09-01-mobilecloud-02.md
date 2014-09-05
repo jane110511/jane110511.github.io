@@ -34,8 +34,31 @@ tags: Android
 
 8. Request Routing and Web.xml
 
-web master
+9. Video Servlet Walkthrough
+	lots of Servlet
+	doGet(){
+		resp.setHeader();
+		resp.setContextType("text/plain");
+	}
+	doPost(){
+		//get values from the client
+		String name = req.getParameter("name");
+		//validate duration
+		//set content type
+		//validate parameters
+		//tell client bad request
+		//tell client successful processed
+	}
 	
+	loop each video 
+	video are stored in the java object
+	anyone can pertend to be your client and send you data, you need to check the data
+	
+10. Securely Handling Client Data & Avoid Injectiong Attacks
+
+	client send some data, because of that data can be a command, we execute that command.
+
+	Don't trust client data.
 
 
 
