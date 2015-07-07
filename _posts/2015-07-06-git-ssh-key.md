@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git ssh key
+title: Git add ssh key to push 
 categories: diary
 tags: job
 ---
@@ -8,7 +8,7 @@ tags: job
 change git from https to ssh
 
 1. git remote rm origin
-2. git remote add origin git@github.com:yuquan0821/demo.git
+2. git remote add origin git@github.com:yourname/demo.git
 3. git push origin 
 
 then generate a ssh key 
