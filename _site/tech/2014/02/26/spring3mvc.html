@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<! -- header.html -->
+<meta charset="utf-8">
+<title>Spring 3 MVC Intro</title>
+
+<meta name="author" content="Jane">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Le styles -->
+<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+-->
+
+ <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+
+<! -- header.html end -->
+
+
+   <body>
+   		<nav class="navbar navbar-default visible-xs" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/janezhango">
+		      <i class="fa fa-github"></i>
+		    </a>
+		    
+		    
+		    
+		    <a type="button" class="navbar-toggle nav-link" href="mailto:jane.110511@gmail.com">
+		      <i class="fa fa-envelope"></i>
+		    </a>
+		    
+			<a class="navbar-brand" href="/">
+				<img src="http://www.gravatar.com/avatar/1b87f1f342c5456fd4a72d419ce2274a?s=35" class="img-circle" />
+				Home Page
+			</a>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="/">Home</a></li>
+			  <li><a href="/categories.html">Categories</a></li>
+  			  <li><a href="/tags.html">Tags</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+       <!-- nav-menu-dropdown -->
+       <div class="btn-group hidden-xs" id="nav-menu">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="/categories.html"><i class="fa fa-folder"></i> Categories</a></li>
+            <li><a href="/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+              <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-arrow-up"></i> Top of Page</a></li>
+          </ul>
+       </div>
+
+		<div class="col-sm-3 sidebar hidden-xs">
+			<! -- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="https://avatars3.githubusercontent.com/u/2988036?v=3&s=140" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">Home Page</a>
+    </h3>
+</header>
+
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/janezhango">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="http://weibo.com/zhangzhangya24">
+				<i class="fa fa-weibo fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:jane.110511@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+	<ul class="list-unstyled list-inline">
+		<li>
+			<a class="btn btn-default btn-sm" href="/moocs/home.html">
+				<i>MOOC</i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+	
+
+<! -- sidebar.html end -->
+
+		</div>
+
+		<div class="col-sm-9 col-sm-offset-3">
+			<article>
+	<div class="page-header">
+	  <h1>Spring 3 MVC Intro </h1>
+	</div>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   February 
+	   26th,
+	   
+	   2014
+	 </span>
+	  <div class="article_body">
+	  <ol>
+  <li>
+    <h2 id="front-controller-dispatcherservlet">Front Controller: DispatcherServlet</h2>
+    <p><img src="http://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/images/mvc.png" alt="mvc" />
+config it in web.xml:</p>
+  </li>
+</ol>
+
+<p><code>
+	&lt;servlet&gt;
+		&lt;servlet-name&gt;dispatcher&lt;/servlet-name&gt;
+		&lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;
+		&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+	&lt;/servlet&gt;
+	&lt;servlet-mapping&gt;
+		&lt;servlet-name&gt;dispatcher&lt;/servlet-name&gt;
+		&lt;url-pattern&gt;*.htm&lt;/url-pattern&gt;
+	&lt;/servlet-mapping&gt;
+</code></p>
+
+<p>org.springframework.web.servlet.DispatcherServlet details in java doc:</p>
+
+<p>Central dispatcher for HTTP request handlers/controllers, e.g. for web UI controllers or HTTP-based remote service exporters. Dispatches to registered handlers for processing a web request, providing convenient mapping and exception handling facilities.</p>
+
+<p>This servlet is very flexible: It can be used with just about any workflow, with the installation of the appropriate adapter classes. It offers the following functionality that distinguishes it from other request-driven web MVC frameworks:</p>
+
+<ul>
+  <li>It is based around a JavaBeans configuration mechanism.</li>
+  <li>It can use any HandlerMapping implementation - pre-built or provided as part of an application - to control the routing of requests to handler objects. Default is org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping and org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping. HandlerMapping objects can be defined as beans in the servlet’s application context, implementing the HandlerMapping interface, overriding the default HandlerMapping if present. HandlerMappings can be given any bean name (they are tested by type).</li>
+  <li>It can use any HandlerAdapter; this allows for using any handler interface. Default adapters are org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter, org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter, for Spring’s org.springframework.web.HttpRequestHandler and org.springframework.web.servlet.mvc.Controller interfaces, respectively. A default org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter will be registered as well. HandlerAdapter objects can be added as beans in the application context, overriding the default HandlerAdapters. Like HandlerMappings, HandlerAdapters can be given any bean name (they are tested by type).</li>
+  <li>The dispatcher’s exception resolution strategy can be specified via a HandlerExceptionResolver, for example mapping certain exceptions to error pages. Default are org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver, org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver, and org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver. These HandlerExceptionResolvers can be overridden through the application context. HandlerExceptionResolver can be given any bean name (they are tested by type).</li>
+  <li>Its view resolution strategy can be specified via a ViewResolver implementation, resolving symbolic view names into View objects. Default is org.springframework.web.servlet.view.InternalResourceViewResolver. ViewResolver objects can be added as beans in the application context, overriding the default ViewResolver. ViewResolvers can be given any bean name (they are tested by type).</li>
+  <li>If a View or view name is not supplied by the user, then the configured RequestToViewNameTranslator will translate the current request into a view name. The corresponding bean name is “viewNameTranslator”; the default is org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator.</li>
+  <li>The dispatcher’s strategy for resolving multipart requests is determined by a org.springframework.web.multipart.MultipartResolver implementation. Implementations for Jakarta Commons FileUpload and Jason Hunter’s COS are included; the typical choise is org.springframework.web.multipart.commons.CommonsMultipartResolver. The MultipartResolver bean name is “multipartResolver”; default is none.</li>
+  <li>Its locale resolution strategy is determined by a LocaleResolver. Out-of-the-box implementations work via HTTP accept header, cookie, or session. The LocaleResolver bean name is “localeResolver”; default is org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver.</li>
+  <li>Its theme resolution strategy is determined by a ThemeResolver. Implementations for a fixed theme and for cookie and session storage are included. The ThemeResolver bean name is “themeResolver”; default is org.springframework.web.servlet.theme.FixedThemeResolver. 
+NOTE: The @RequestMapping annotation will only be processed if a corresponding HandlerMapping (for type level annotations) and/or HandlerAdapter (for method level annotations) is present in the dispatcher. This is the case by default. However, if you are defining custom HandlerMappings or HandlerAdapters, then you need to make sure that a corresponding custom DefaultAnnotationHandlerMapping and/or AnnotationMethodHandlerAdapter is defined as well - provided that you intend to use @RequestMapping.</li>
+</ul>
+
+<p>A web application can define any number of DispatcherServlets. Each servlet will operate in its own namespace, loading its own application context with mappings, handlers, etc. Only the root application context as loaded by org.springframework.web.context.ContextLoaderListener, if any, will be shared.</p>
+
+<p>As of Spring 3.1, DispatcherServlet may now be injected with a web application context, rather than creating its own internally. This is useful in Servlet 3.0+ environments, which support programmatic registration of servlet instances. See DispatcherServlet(WebApplicationContext) Javadoc for details.</p>
+
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Tech-ref">
+					Tech <span>(9)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#spring,-ref">
+					spring, <span>(1)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#mvc-ref">
+					mvc <span>(1)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="//tech/2014/02/26/spring3mvc-hands-on.html" title="Spring 3 MVC Hands on">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="//tech/2014/03/05/android-04.html" title="Creative, Serious and Playful Science of Android Apps Week 04">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+			<!-- footer.html -->
+<footer>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- test -->
+	<ins class="adsbygoogle"
+		 style="display:inline-block;width:728px;height:90px"
+		 data-ad-client="ca-pub-0539675232959905"
+		 data-ad-slot="1290535800"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+ <hr/>
+ <p>
+ 	&copy; 2016 Jane @ github.
+ </p>
+</footer>
+
+<!-- footer.html end -->
+
+
+		</div>
+
+    
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+   </body>
+
+</html>
+
+
