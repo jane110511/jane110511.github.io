@@ -1,7 +1,6 @@
 _config.yml
-_site/*
 d
 .idea/*
 target/*
-
-
+_site/*
+janezhango.github.io.iml
